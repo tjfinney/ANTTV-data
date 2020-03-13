@@ -4,12 +4,15 @@ NTMSS (New Testament manunscripts) is a site for data and analysis related to th
 
 The data, analysis scripts, and analysis results are divided into a number of directories:
 
-Data
-: Data matrices give textual variation sites (columns) and codes representing witness readings (rows). Readings may be encoded as numerals or letters.
+## Data
 
-Distances
-: Distance matrices give distances between witnesses calculated using the simple matching coefficient. Distances are only calculated for witness pairs that share enough variation sites where the readings of both witnesses are known. ("Enough" usually means at least 15 sites.)
+Data matrices give textual variation sites (columns) and codes representing witness readings (rows). Readings may be encoded as numerals or letters.
 
-Scripts
-: R scripts for calculations and analysis.
+## Distances
+
+Distance matrices give distances between witnesses calculated using the simple matching coefficient. Distances are only calculated for witness pairs that share enough variation sites where the readings of both witnesses are known. ("Enough" usually means at least 15 sites.)
+
+## Scripts
+
+R scripts for calculations and analysis.
 
