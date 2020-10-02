@@ -1,6 +1,6 @@
 # NTMSS
 
-NTMSS (New Testament manunscripts) is a site for data and analysis related to the text of the New Testament. See [How to Discover Textual Groups](https://www.digitalstudies.org/articles/10.16995/dscn.291/) for an introduction.
+NTMSS (New Testament manuscripts) is a site for data and analysis related to the text of the New Testament. See [How to Discover Textual Groups](https://www.digitalstudies.org/articles/10.16995/dscn.291/) for an introduction.
 
 The data, analysis scripts, and analysis results are divided into a number of directories:
 
