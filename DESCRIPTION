@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "tjf@tfinney.net",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Multivariate analysis of textual variation data. See "How to Discover Textual Groups" (https://www.digitalstudies.org/articles/10.16995/dscn.291/) for an introduction.
+Description: Multivariate analysis of textual variation data. See "How to Discover Textual Groups" (https://www.digitalstudies.org/articles/10.16995/dscn.291/) for an introduction. See "Cluster analysis" (https://en.wikipedia.org/wiki/Cluster_analysis) for an introduction to cluster analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
