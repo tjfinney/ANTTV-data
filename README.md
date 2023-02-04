@@ -9,7 +9,7 @@ Most of this data is mirrored at the following Zenodo repositories:
 * [Data matrices](https://zenodo.org/record/4064629)
 * [Distance matrices](https://zenodo.org/record/4064631)
 
-A companion R package named ANTTV contains functions for performing various kinds of multivariate analysis on these data and distance matrices.
+A companion R package named [ANTTV](https://github.com/tjfinney/ANTTV) contains functions for performing various kinds of multivariate analysis on these data and distance matrices.
 
 ## Sources
 
