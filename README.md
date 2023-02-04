@@ -13,4 +13,4 @@ A companion R package named [ANTTV](https://github.com/tjfinney/ANTTV) contains 
 
 ## Sources
 
-Please see [Views of New Testament Textual Space](https://www.tfinney.net/Views/index.xhtml) for information on the sources of these data sets.
+Please see table 2 of [Views of New Testament Textual Space](https://www.tfinney.net/Views/index.xhtml) for information on the sources of these data sets.
