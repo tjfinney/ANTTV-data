@@ -15,7 +15,9 @@ Please see [How to Discover Textual Groups](https://www.digitalstudies.org/artic
 
 # Data sets
 
-The data sets have been compiled from numerous sources. Data matrices (also known as [design matrices](https://en.wikipedia.org/wiki/Design_matrix)) are derived from various critical editions, specialist monographs, dissertations, and online data sets. They are comprised of rows for textual witnesses (e.g. Greek manuscripts, lectionaries, early versions, patristic citations) and columns for readings (represented by numeric or alphabetic codes) at variation sites (i.e. places where the witnesses have varying textual states). [Distance matrices](https://en.wikipedia.org/wiki/Distance_matrix) are typically derived from published tables of percentage agreements.
+The data sets are comprised of data matrices and distance matrices compiled from numerous sources such as critical editions, monographs, dissertations, and online data repositories. Data matrices are comprised of rows for textual witnesses (e.g. Greek manuscripts, lectionaries, early versions, patristic citations) and columns for readings (represented by numeric or alphabetic codes) at variation sites (i.e. places where the witnesses have varying textual states). Distance matrices are derived from published tables of percentage agreements by converting each percentage agreement to a distance using this formula:
+
+Distance = 1 - (percentage agreement / 100)
 
 # Sources
 
