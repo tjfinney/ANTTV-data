@@ -29,3 +29,13 @@ A number of the data sets are mirrored at the following Zenodo repositories:
 
 * [Data matrices](https://zenodo.org/record/4064629)
 * [Distance matrices](https://zenodo.org/record/4064631)
+
+# Doing analysis
+
+To do analysis on these data sets, first install the `devtools` and `ANTTV.code` packages:
+
+``` r
+install.packages("devtools")
+devtools::install_github("tjfinney/ANTTV-code")
+```
+
