@@ -32,7 +32,7 @@ A number of the data sets are mirrored at the following Zenodo repositories:
 
 # Doing analysis
 
-To do analysis on these data sets, open an *R* session and install the `devtools` and `ANTTV.code` packages. ([RStudio](https://posit.co/downloads/) provides a great environment for working with *R*.)
+To do analysis on these data sets, open an *R* session and install the `devtools` and `ANTTV.code` packages. (The [RStudio IDE](https://posit.co/downloads/) provides a great environment for working with *R*.)
 
 ``` r
 install.packages("devtools")
@@ -43,7 +43,7 @@ Once the `ANTTV.code` package is installed, a data set can be loaded and analyse
 
 ``` r
 library(ANTTV.code)
-read_data_frame("data/Acts.UBS5.csv") |> do_reduction() | do_dist() | do_NJ()
+read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_NJ()
 ```
 
 
