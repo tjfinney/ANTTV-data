@@ -352,8 +352,8 @@ display: none;
 </div>
 
 
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
+<div id="anttv.data" class="section level2">
+<h2>ANTTV.data</h2>
 <p>This is one of a set of repositories relating to analysis of New
 Testament textual variation:</p>
 <dl>
@@ -405,19 +405,38 @@ repositories:</p>
 matrices</a></li>
 </ul>
 </div>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
+<ol style="list-style-type: decimal">
+<li>Install <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f">R</a>
+on your computer</li>
+<li>[Optional] To make life far easier, install the <a href="https://posit.co/download/rstudio-desktop/">RStudio IDE</a> on
+your computer</li>
+<li>Install the <code>ANTTV.code</code> package</li>
+<li>Use the programs in the package to analyse the data.</li>
+</ol>
+</div>
+<div id="installation" class="section level2">
+<h2>Installation</h2>
+</div>
 <div id="doing-analysis" class="section level2">
 <h2>Doing analysis</h2>
-<p>To do analysis on these data sets, open an <em>R</em> session and
-install the <code>devtools</code> and <code>ANTTV.code</code> packages.
-(The <a href="https://posit.co/downloads/">RStudio IDE</a> provides a
-great environment for working with <em>R</em>.)</p>
+<p>To do analysis on these data sets, first install <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f">R</a>
+on your computer. (The <a href="https://posit.co/downloads/">RStudio
+IDE</a> provides a great environment for working with <em>R</em>.) Once
+<em>R</em> is installed, install the <em>devtools</em> package then
+install the <em>ANTTV.code</em> package from <a href="https://github.com/">GitHub</a> by entering the following commands
+at the <em>R</em> prompt:</p>
 <pre class="r"><code>install.packages(&quot;devtools&quot;)
-devtools::install_github(&quot;tjfinney/ANTTV-code&quot;)</code></pre>
+devtools::install_github(&quot;tjfinney/ANTTV.code&quot;)</code></pre>
 <p>Once the <code>ANTTV.code</code> package is installed, a data set can
-be loaded and analysed:</p>
+be loaded and analysed as follows:</p>
 <pre class="r"><code>library(ANTTV.code)
 read_data_frame(&quot;data/Acts.UBS5.csv&quot;) |&gt; do_reduction() |&gt; do_dist() |&gt; do_NJ()</code></pre>
-<p>…</p>
+<p>Output can be saved as outlined in the <em>Saving results</em>
+section of the <a href="https://github.com/tjfinney/ANTTV.code#saving-results">ANTTV.code
+Readme</a>. For example:</p>
+<pre class="r"><code>read_data_frame(&quot;data/Acts.UBS5.csv&quot;) |&gt; do_reduction() |&gt; do_dist() |&gt; do_PAM(fn=&quot;output/PAM/Acts.UBS5.txt&quot;, write=TRUE)</code></pre>
 </div>
 
 

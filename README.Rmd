@@ -1,4 +1,4 @@
-## Introduction
+## ANTTV.data
 
 This is one of a set of repositories relating to analysis of New Testament textual variation:
 
@@ -30,20 +30,35 @@ A number of the data sets are mirrored at the following Zenodo repositories:
 * [Data matrices](https://zenodo.org/record/4064629)
 * [Distance matrices](https://zenodo.org/record/4064631)
 
+## Getting started
+
+1. Install [R](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f) on your computer
+2. [Optional] To make life far easier, install the [RStudio IDE](https://posit.co/download/rstudio-desktop/) on your computer
+3. Install the `ANTTV.code` package
+4. Use the programs in the package to analyse the data.
+
+## Installation
+
+
 ## Doing analysis
 
-To do analysis on these data sets, open an *R* session and install the `devtools` and `ANTTV.code` packages. (The [RStudio IDE](https://posit.co/downloads/) provides a great environment for working with *R*.)
+To do analysis on these data sets, first install [R](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f) on your computer. (The [RStudio IDE](https://posit.co/downloads/) provides a great environment for working with *R*.) Once *R* is installed, install the *devtools* package then install the *ANTTV.code* package from [GitHub](https://github.com/) by entering the following commands at the *R* prompt:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("tjfinney/ANTTV-code")
+devtools::install_github("tjfinney/ANTTV.code")
 ```
 
-Once the `ANTTV.code` package is installed, a data set can be loaded and analysed:
+Once the `ANTTV.code` package is installed, a data set can be loaded and analysed as follows:
 
 ``` r
 library(ANTTV.code)
 read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_NJ()
 ```
 
-...
+Output can be saved as outlined in the *Saving results* section of the [ANTTV.code Readme](https://github.com/tjfinney/ANTTV.code#saving-results). For example:
+
+``` r
+read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_PAM(fn="output/PAM/Acts.UBS5.txt", write=TRUE)
+```
+
