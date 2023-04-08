@@ -1,6 +1,6 @@
-Package: NTMSS
-Title: Explore Textual Affiliation
-Version: 0.0.0.9000
+Package: ANTTV.data
+Title: Data relating to analysis of New Testament textual variation
+Version: 23.04.08.01
 Authors@R: 
     person(given = "Tim",
            family = "Finney",
@@ -15,5 +15,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
     testthat
-Imports: 
-    forcats
+Imports:
