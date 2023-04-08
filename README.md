@@ -61,4 +61,3 @@ Output can be saved as outlined in the *Saving results* section of the [ANTTV.co
 ``` r
 read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_PAM(fn="output/PAM/Acts.UBS5.txt", write=TRUE)
 ```
-...
