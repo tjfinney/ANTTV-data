@@ -39,15 +39,14 @@ A number of the data sets are mirrored at the following Zenodo repositories:
 
 ## Installation
 
-
-## Doing analysis
-
 To do analysis on these data sets, first install [R](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f) on your computer. (The [RStudio IDE](https://posit.co/downloads/) provides a great environment for working with *R*.) Once *R* is installed, install the *devtools* package then install the *ANTTV.code* package from [GitHub](https://github.com/) by entering the following commands at the *R* prompt:
 
 ``` r
 install.packages("devtools")
 devtools::install_github("tjfinney/ANTTV.code")
 ```
+
+## Doing analysis
 
 Once the `ANTTV.code` package is installed, a data set can be loaded and analysed as follows:
 
