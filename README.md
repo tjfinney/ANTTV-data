@@ -15,7 +15,7 @@ This is one of a set of repositories relating to analysis of New Testament textu
 
 ## Data sets
 
-The data sets are comprised of data matrices and distance matrices compiled from numerous sources such as critical editions, monographs, dissertations, and online data repositories. Data matrices are comprised of rows for textual witnesses (e.g. Greek manuscripts, lectionaries, early versions, patristic citations) and columns for readings (represented by numeric or alphabetic codes) at variation sites (i.e. places where the witnesses have varying textual states). Distance matrices are derived from published tables of percentage agreements by converting each percentage agreement to a distance using this formula:
+The data sets are comprised of data matrices and distance matrices compiled from numerous sources such as critical editions, monographs, dissertations, and online data repositories. Data matrices are comprised of rows for textual witnesses (e.g. Greek manuscripts, lectionaries, early versions, patristic citations) and columns for readings (represented by numeric or alphabetic codes) at variation sites (i.e. places where the witnesses have varying textual states). Distance matrices are either derived from data matrices or from published tables of percentage agreements if no data matrices are available. Percentage agreement is converted to distance using this formula:
 
 Distance = 1 - (percentage agreement / 100)
 
