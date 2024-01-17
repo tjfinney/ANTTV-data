@@ -31,6 +31,15 @@ This is one of a set of repositories relating to analysis of New Testament textu
 
 [How to discover textual groups](https://www.digitalstudies.org/article/id/7324/) provides an introduction to the analysis techniques.
 
+## Installation
+
+You can install the development version of ANTTV.data from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("tjfinney/ANTTV.data")
+```
+
 ## Data sets
 
 The data sets are comprised of data matrices and distance matrices compiled from numerous sources such as critical editions, monographs, dissertations, and online data repositories. Data matrices are comprised of rows for textual witnesses (e.g. Greek manuscripts, lectionaries, early versions, patristic citations) and columns for readings (represented by numeric or alphabetic codes) at variation sites (i.e. places where the witnesses have varying textual states). Distance matrices are either derived from data matrices or from published tables of percentage agreements if no data matrices are available. Percentage agreement is converted to distance using this formula:
@@ -71,49 +80,14 @@ library(ANTTV.code)
 read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_NJ()
 ```
 
-Output can be saved as outlined in the *Saving results* section of the [ANTTV.code Readme](https://github.com/tjfinney/ANTTV.code#saving-results). For example:
-
-``` r
-read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_PAM(fn="output/PAM/Acts.UBS5.txt", write=TRUE)
-```
-
 To drop particular witnesses:
 
 ```r
 read_data_frame("data/Acts.UBS5.csv") |> (\(d) (d[(!row.names(d) %in% c("UBS", "Byz", "Lect")),]))()
 ```
 
-## Installation
-
-You can install the development version of ANTTV.data from [GitHub](https://github.com/) with:
+Output can be saved as outlined in the *Saving results* section of the [ANTTV.code Readme](https://github.com/tjfinney/ANTTV.code#saving-results). For example:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("tjfinney/ANTTV.data")
+read_data_frame("data/Acts.UBS5.csv") |> do_reduction() |> do_dist() |> do_PAM(fn="output/PAM/Acts.UBS5.txt", write=TRUE)
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-library(ANTTV.data)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
-
