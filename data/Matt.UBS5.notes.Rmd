@@ -1,0 +1,13 @@
+---
+title: "Matt UBS5 notes"
+author: "Tim Finney"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Possible errors in the apparatus
+
+## 1.18.1
+
+Same witness listed under more than one reading: Jerome
+
